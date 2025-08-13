@@ -1,7 +1,7 @@
 # 🌐 Network Configuration Project
 
 This repository contains the configuration files and a detailed explanation of the **network topology** I designed and implemented in **Cisco Packet Tracer**.  
-The project demonstrates my skills in **network administration**, including:
+The project uses the following network configuration techniques:
 
 - **VLSM subnetting**
 - **Dynamic routing** (RIP)
@@ -41,7 +41,7 @@ A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically as
 A key location, hosting the **central DNS server** for the entire network.
 
 - **DNS Server:** Server-PT DNS SERVER
-- **Static IP:** configured manually
+- **IP Address:** Static
 - **Domain Name:** cesae.local
 - **Function:** Resolves hostnames for all network devices.
 
@@ -75,9 +75,10 @@ A key location, hosting the **central DNS server** for the entire network.
   - **VLAN 10 (Financeiro):** Shutdown mode, 1 dynamic MAC per port.  
   - **VLAN 20 (Staff):** Restrict mode, 1 static MAC per port.  
 
-- **DHCP Snooping:** Prevents rogue DHCP server attacks.  
+- **DHCP Snooping:**  Prevents rogue DHCP server attacks by filtering DHCP messages from untrusted sources. 
+A rate limit of 100 packets per second was set on all ports, with a specific port configured to a limit of 1 packet per second for testing purposes.  
 - **ARP Inspection:** Protects against ARP spoofing attacks.  
-- **STP Hardening:** PortFast & BPDU Guard on all access ports for stability.
+- **STP Hardening:** PortFast and BPDU Guard on all access ports to ensure network stability and prevent unwanted topology changes.
 
 ---
 
@@ -85,8 +86,3 @@ A key location, hosting the **central DNS server** for the entire network.
 
 ![Network Topology](images/network-topology.PNG)
 
-
----
-
-**Skills Demonstrated:**  
-VLSM | RIP | HSRP | VLAN & VTP | DHCP | DNS | Port-Security | DHCP Snooping | ARP Inspection | STP Hardening
