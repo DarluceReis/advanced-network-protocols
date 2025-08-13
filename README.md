@@ -10,7 +10,7 @@ The project demonstrates my skills in **network administration**, including:
 
 ---
 
-## 📜 Project Overview
+## Project Overview
 
 The network is composed of **three main sites**:
 
@@ -22,7 +22,7 @@ The goal was to establish robust, secure, and redundant communication between al
 
 ---
 
-## 🏭 1. Production Site — Vila Real
+## 1. Production Site — Vila Real
 
  **Subnets configured with VLSM** starting from `183.16.0.0/16` to optimize address space usage:
 
@@ -31,14 +31,14 @@ The goal was to establish robust, secure, and redundant communication between al
 | **VILAREAL 1** | 1021            | g0/0      | /22  |
 | **VILAREAL 2** | 800             | g0/1      | /21  |
 
-📡 **DHCP Service**  
+**DHCP Service**  
 A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically assign IP addresses to all hosts in Vila Real.
 
 ---
 
-## 💾 2. Datacenter — Lisbon
+## 2. Datacenter — Lisbon
 
-🔹 A key location, hosting the **central DNS server** for the entire network.
+A key location, hosting the **central DNS server** for the entire network.
 
 - **DNS Server:** `Server-PT DNS SERVER`
 - **Static IP:** configured manually
@@ -47,7 +47,7 @@ A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically as
 
 ---
 
-## 🏢 3. Central Office — Porto
+## 3. Central Office — Porto
 
 ### VLANs & VTP
 - **VLAN 10 — FINANCEIRO:** `192.168.10.0/25`  
@@ -63,14 +63,14 @@ A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically as
 
 ---
 
-## 📡 4. Routing
+## 4. Routing
 
 - **Protocol Used:** RIP (Routing Information Protocol) for dynamic routing between the three sites.
 - Additional skills: Able to configure **OSPF** and **EIGRP** if required.
 
 ---
 
-## 🔒 5. Security & Hardening
+## 5. Security & Hardening
 
 - **Port-Security:**  
   - **VLAN 10 (Financeiro):** Shutdown mode, 1 dynamic MAC per port.  
@@ -82,12 +82,12 @@ A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically as
 
 ---
 
-## 📷 Network Topology Diagram
+## Network Topology Diagram
 
-![Uploading image.png…]()
+
 
 
 ---
 
-**💡 Skills Demonstrated:**  
+**Skills Demonstrated:**  
 VLSM | RIP | HSRP | VLAN & VTP | DHCP | DNS | Port-Security | DHCP Snooping | ARP Inspection | STP Hardening
