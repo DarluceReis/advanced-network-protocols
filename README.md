@@ -28,7 +28,7 @@ The goal was to establish robust, secure, and redundant communication between al
 
 | Subnet         | Supported Hosts | 
 |----------------|-----------------|
-| **VILAREAL 1** | 1021            | 
+| **VILAREAL 1** | 1024            | 
 | **VILAREAL 2** | 800             |
 
 **DHCP Service**  
