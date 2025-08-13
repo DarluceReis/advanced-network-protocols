@@ -24,7 +24,7 @@ The goal was to establish robust, secure, and redundant communication between al
 
 ## 1. Production Site — Vila Real
 
- **Subnets configured with VLSM** starting from `183.16.0.0/16` to optimize address space usage:
+ **Subnets configured with VLSM** starting from 183.16.0.0/16 to optimize address space usage:
 
 | Subnet         | Supported Hosts | Interface | Mask |
 |----------------|-----------------|-----------|------|
@@ -40,9 +40,9 @@ A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically as
 
 A key location, hosting the **central DNS server** for the entire network.
 
-- **DNS Server:** `Server-PT DNS SERVER`
+- **DNS Server:** Server-PT DNS SERVER
 - **Static IP:** configured manually
-- **Domain Name:** `cesae.local`
+- **Domain Name:** cesae.local
 - **Function:** Resolves hostnames for all network devices.
 
 ---
@@ -50,8 +50,8 @@ A key location, hosting the **central DNS server** for the entire network.
 ## 3. Central Office — Porto
 
 ### VLANs & VTP
-- **VLAN 10 — FINANCEIRO:** `192.168.10.0/25`  
-- **VLAN 20 — STAFF:** `192.168.20.0/26`  
+- **VLAN 10 — FINANCEIRO:** 192.168.10.0/25  
+- **VLAN 20 — STAFF:** 192.168.20.0/26  
 - **VTP (Virtual Trunking Protocol)** configured for automatic VLAN management.
 
 ### HSRP (Hot Standby Router Protocol)
@@ -84,7 +84,7 @@ A key location, hosting the **central DNS server** for the entire network.
 
 ## Network Topology Diagram
 
-
+![Network Topology](images/network-topology.PNG)
 
 
 ---
