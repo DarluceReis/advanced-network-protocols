@@ -66,7 +66,6 @@ A key location, hosting the **central DNS server** for the entire network.
 ## 4. Routing
 
 - **Protocol Used:** RIP (Routing Information Protocol) for dynamic routing between the three sites.
-- Additional skills: Able to configure **OSPF** and **EIGRP** if required.
 
 ---
 
