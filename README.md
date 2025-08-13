@@ -14,9 +14,9 @@ The project uses the following network configuration techniques:
 
 The network is composed of **three main sites**:
 
-1. **Production Site — Vila Real**  
-2. **Central Office — Porto**  
-3. **Datacenter — Lisbon**  
+1. **Production Site = Vila Real**  
+2. **Central Office = Porto**  
+3. **Datacenter = Lisbon**  
 
 The goal was to establish robust, secure, and redundant communication between all locations.
 
@@ -26,10 +26,10 @@ The goal was to establish robust, secure, and redundant communication between al
 
  **Subnets configured with VLSM** starting from 183.16.0.0/16 to optimize address space usage:
 
-| Subnet         | Supported Hosts | Interface | Mask |
-|----------------|-----------------|-----------|------|
-| **VILAREAL 1** | 1021            | g0/0      | /22  |
-| **VILAREAL 2** | 800             | g0/1      | /21  |
+| Subnet         | Supported Hosts | 
+|----------------|-----------------|
+| **VILAREAL 1** | 1021            | 
+| **VILAREAL 2** | 800             |
 
 **DHCP Service**  
 A dedicated DHCP server (**Server-PT Server1**) was configured to dynamically assign IP addresses to all hosts in Vila Real.
